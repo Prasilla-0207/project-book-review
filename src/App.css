@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+}
+
+/* CENTER EVERYTHING */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  background: #111;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.book-list {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.book-card {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px;
+  min-height: 320px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-8px);
+}
+
+/* CONTENT */
+.book-card h3 {
+  margin-bottom: 6px;
+}
+
+.book-card p {
+  margin: 6px 0;
+}
